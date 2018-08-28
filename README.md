@@ -25,7 +25,7 @@ and compare the prediction accuracy. We are faced with challenges because
 -   Large amount of classes.
 ### Datasets and Inputs 
 
-For this project we will use data from the free available HASYv2 dataset $[1]$. It contains 168233 labeled images of 369 handwritten mathematical symbols. The images have a 32 $times$ 32 px resolution. So there are 32 $times$ 32 = 1024 features in $[ 0,255 ]$. We will use One Hot encoded labels to train the learners. It’s important to remark that the number of training data per class varies as mentioned above. In addition, the HASYv2 dataset is designated to be trained by a 10-fold cross validation.
+For this project we will use data from the free available HASYv2 dataset $[1]$. It contains 168233 labeled images of 369 handwritten mathematical symbols. The images have a 32 x 32 px resolution. So there are 32 x 32 = 1024 features in $[ 0,255 ]$. We will use One Hot encoded labels to train the learners. It’s important to remark that the number of training data per class varies as mentioned above. In addition, the HASYv2 dataset is designated to be trained by a 10-fold cross validation.
 
 ### Solution Statement 
 
