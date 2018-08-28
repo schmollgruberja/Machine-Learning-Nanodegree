@@ -39,7 +39,7 @@ Towards the training process recognition proceeds fast. One has to put a picture
 
 ### Benchmark Model 
 
-In the capstone project we will choose two different benchmark approaches . On the one hand we will compare the presented learners among themselves. On the other hand I will compare my results with domain related results$[1]$.
+In the capstone project we will choose two different benchmark approaches . On the one hand we will compare the presented learners among themselves. On the other hand I will compare my results with domain related results[1].
 
 
 ### Project Design 
