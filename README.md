@@ -12,7 +12,7 @@ Proposal
 
 ### Domain Background
 
-Years ago I read an article about hand written digit recognition. I was amazed. It was the first time I have heard about Machine Learning. Now some years later I’d like to train my own Machine Learning algorithm to classify hand written mathematical symbols (HASYv2 dataset), especially because I’m a mathematics student. Handwriting recognition (HWR) belongs to the domain of image processing. One of the first researchers who was active in this field was Sheloa Guberman 1962. The business application capabilities of this topic are [incredible](https://formtek.com/blog/handwriting-recognition-digitizing-text-from-handwritten-paper-documents/). The best [results](https://en.wikipedia.org/wiki/MNIST_database) in this domain have been achieved on the MNIST database. It is probably the most famous dataset and therefore the most influential data set in this research area. In this capstone project we won’t use this dataset but it’s essential to mention it. Furthermore, I suggest to the interested reader to look at [Street View Imagery](https://arxiv.org/pdf/1312.6082.pdf).
+Years ago I read an article about hand written digit recognition. I was amazed. It was the first time I have heard about Machine Learning. Now, years later I’d like to train my own Machine Learning algorithm to classify hand written mathematical symbols (HASYv2 dataset), especially because I studied mathematics. Handwriting recognition (HWR) belongs to the domain of image processing. One of the first researchers who was active in this field was Sheloa Guberman 1962. The business application capabilities of this topic are [incredible](https://formtek.com/blog/handwriting-recognition-digitizing-text-from-handwritten-paper-documents/). The best [results](https://en.wikipedia.org/wiki/MNIST_database) in this domain have been achieved on the MNIST database. It is probably the most famous dataset and therefore the most influential data set in this research area. In this capstone project we won’t use this dataset but it’s essential to mention it. Furthermore, I suggest to the interested reader to look at [Street View Imagery](https://arxiv.org/pdf/1312.6082.pdf).
 
 
 ### Problem Statement
@@ -25,13 +25,13 @@ and compare the prediction accuracy. We are faced with challenges because
 -   Large amount of classes.
 ### Datasets and Inputs 
 
-For this project we will use data from the free available HASYv2 dataset $[1]$. It contains 168233 labeled images of 369 handwritten mathematical symbols. The images have a 32 x 32 px resolution. So there are 32 x 32 = 1024 features in $[ 0,255 ]$. We will use One Hot encoded labels to train the learners. It’s important to remark that the number of training data per class varies as mentioned above. In addition, the HASYv2 dataset is designated to be trained by a 10-fold cross validation.
+For this project we will use data from the free available HASYv2 dataset[1]. It contains 168233 labeled images of 369 handwritten mathematical symbols. The images have a 32 x 32 px resolution. So there are 32 x 32 = 1024 features in [ 0,255 ]. We will use One Hot encoded labels to train the learners. It’s important to remark that the number of training data per class varies as mentioned above. In addition, the HASYv2 dataset is designated to be trained by a 10-fold cross validation.
 
 ### Solution Statement 
 
 As already mentioned we will use supervised training algorithms to classify the symbols. We will use labeled training data to fit our learners. To be able to guarantee replicability we will train the algorithms with set RandomSates.
 
--   We will train the Deep Neural Networks (DNN) with some $(1,2,3,4,5)$ hidden, fully connected layers. The DNN will have 1024 input neurons and 369 output neurons. We will use the sigmoid as activation function.
+-   We will train the Deep Neural Networks (DNN) with some (1,2,3,4,5) hidden, fully connected layers. The DNN will have 1024 input neurons and 369 output neurons. We will use the sigmoid as activation function.
 
 -   Certainly the CNN will have 1024 input neurons and 369 output neurons too. But the architecture of the hidden layer differs. We will use some sequence of convolutional and pooling layers.
 
